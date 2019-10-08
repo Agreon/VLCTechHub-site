@@ -14,9 +14,12 @@
 .event-summary {
   position: relative;
   justify-self: left;
-  margin-bottom: $space-large;
+  width: 100%;
+  margin-bottom: $space-large/2;
 
   @include size-medium {
+    width: auto;
+    margin-bottom: $space-large;
     justify-self: center;
   }
 
@@ -40,8 +43,9 @@
     }
 
     img {
-      width: 100%;
+      width: 33%;
       max-width: 300px;
+      min-width: 50px;
 
       background-color: whitesmoke;
       transition: outline 120ms ease-in-out;
@@ -67,6 +71,9 @@
     height: 2px;
     color: black;
     background-color: black;
-    margin: $space-large auto $space-larger auto;
+    margin: $space-large/2 auto $space-larger/2 auto;
+    @include size-medium {
+      margin: $space-large auto $space-larger auto;
+    }
   }
 }
