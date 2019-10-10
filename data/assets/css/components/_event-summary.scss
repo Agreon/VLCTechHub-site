@@ -15,7 +15,7 @@
   position: relative;
   justify-self: left;
   width: 100%;
-  margin-bottom: $space-large/2;
+  margin-bottom: $space-medium;
 
   @include size-medium {
     width: auto;
@@ -71,7 +71,7 @@
     height: 2px;
     color: black;
     background-color: black;
-    margin: $space-large/2 auto $space-larger/2 auto;
+    margin: $space-medium auto $space-large auto;
     @include size-medium {
       margin: $space-large auto $space-larger auto;
     }
